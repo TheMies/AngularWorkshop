@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
+  @Input() initalData: string | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
+    if (this.initalData == undefined){
+      this.initalData = "default";
+    }
   }
-
 }
