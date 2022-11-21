@@ -1,5 +1,5 @@
-<!-- 04 Binding from field -->
-<button type="button" disabled="true">Save</button>
-<!-- Bind button disabled state to `isUnchanged` property -->
-<!-- <button type="button" [disabled]="isUnchanged">Save</button> -->
+<!-- 05 Binding event -->
+<button type="button" (click)="onToggleEnableState()">Toggle enable state</button>
+
+<button type="button" [disabled]="isUnchanged">Save</button>
 
