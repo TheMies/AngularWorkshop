@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -6,7 +6,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-  @Input() initalData: string = "default";
+  name: string = "";
+  @Output() onGetNameClicked: EventEmitter<string> = new EventEmitter<string>();
+  
+  onClick() {
+    this.onGetNameClicked.emit(this.name);
+  }
 
   constructor() { }
 

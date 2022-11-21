@@ -1,12 +1,9 @@
 <!-- with initial data -->
 <div>
-  Set with inital data:
-  <app-test initalData="Hallo world!"></app-test>
+  <p>This is the Test component:</p>
+  <app-test (onGetNameClicked)="onNameClicked($event)"></app-test>
+
+  <hr/>
+  <p>This is the main component:</p>
+  <p>The name is: {{name}}</p>
 </div>
-
-<!-- without initial data -->
-<!-- <div>
-  Set without inital data:
-  <app-test></app-test>
-</div> -->
-
