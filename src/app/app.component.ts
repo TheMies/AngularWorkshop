@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'WS01';
-  name = "test";
-  age = 42;
+  isUnchanged: boolean = true;
 }
