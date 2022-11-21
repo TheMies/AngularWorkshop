@@ -6,11 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isUnchanged: boolean = true;
-
-  onToggleEnableState(){
-    this.isUnchanged = !this.isUnchanged;
-  }
+  name: string = "Harry";
 }
 
 

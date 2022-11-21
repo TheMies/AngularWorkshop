@@ -1,5 +1,5 @@
-<!-- 05 Binding event -->
-<button type="button" (click)="onToggleEnableState()">Toggle enable state</button>
+<!-- 06 Two-way binding -->
+<input type="text" [(ngModel)]="name">
 
-<button type="button" [disabled]="isUnchanged">Save</button>
+Your name is: {{name}}
 
