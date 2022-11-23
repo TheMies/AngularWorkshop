@@ -7,6 +7,6 @@ import { User } from './User';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent {
-    user: User = new User("Herman", 42);
+    user: User = new User("Herman", 42, 1.86);
 }
 
