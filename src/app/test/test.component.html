@@ -1,15 +1,21 @@
-<!-- No classes yet -->
-<!-- <span>Username: </span>
-<span>{{user?.name}}</span>
-
-<div>
-    {{user?.showNameAgeAndHeight()}}
-</div> -->
-
 <!-- Define classes and styling -->
-<span class="label">Username: </span>
-<span class="value">{{user?.name}}</span>
+<div class="card text-bg-success  mb-3" style="max-width: 30rem;">
+    <h5 class="card-title">
+        {{user?.showNameAgeAndHeight()}}
+    </h5>
 
-<div class="nameAgeAndHeight">
-    {{user?.showNameAgeAndHeight()}}
+    <div class="card-body">
+        <label for="exampleInputEmail1" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{user?.name}}" />
+    </div>
+
+    <!-- Without Bootstrap -->
+    <button type="button" style="width: 200px;">Primary</button>
+    <button type="button" style="width: 200px;">Secondary</button>
+
+    <!-- With Bootstrap -->
+    <!-- <div class="container-fluid">
+        <button type="button" class="btn btn-primary" style="width: 200px;">Primary</button>
+        <button type="button" class="btn btn-secondary" style="width: 200px;">Secondary</button>
+    </div> -->
 </div>
