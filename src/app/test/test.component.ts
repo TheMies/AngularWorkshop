@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogService } from '../log.service';
 import { User } from './User';
 
 @Component({
@@ -8,8 +9,9 @@ import { User } from './User';
 })
 
 export class TestComponent {
-    someText = "Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.";
-
-    ngOnInit(): void {}
+  constructor(private log: LogService){
+    log.log("In constructor!");
   }
+}
+  
 
