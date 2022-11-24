@@ -1,28 +1,7 @@
-<!-- Text formatting -->
-<div>Text: {{someText}}</div>
-<!-- <div>Text: {{someText | uppercase}}</div> -->
-<!-- <div>Text: {{someText | lowercase}}</div> -->
+<!-- Custom pipe: chars to spaces -->
+<div>{{someText}}</div>
 
+<!-- <div>{{someText | convertCharToChar : ' ':'-'}}</div> -->
 
-<!-- Date formats -->
-<!-- <div>Date: {{someDate}}</div> -->
-<!-- <div>Date: {{someDate | date }}</div> -->
-<!-- <div>Date: {{someDate | date : 'dd-MM-yyyy' }}</div> -->
+<!-- <div>{{someText | convertCharToChar : ' ':'-' | convertCharToChar : 'a':'*'}}</div> -->
 
-
-<!-- Integers formats -->
-<!-- <div>{{42}}</div> -->
-<!-- Integers formats (leading 0 and 2 decimals) -->
-<!-- <div>{{42 | number : '3.2-2'}}</div> -->
-
-
-<!-- Decimal formats -->
-<!-- <div>Number: {{3.14159265359}}</div> -->
-<!-- <div>Number: {{3.14159265359 | number : '1.0-3'}}</div> -->
-<!-- Note the error! import locale in TS -->
-<!-- <div>Number: {{3.14159265359 | number : '6.0-10':'nl-NL'}}</div> -->
-
-
-<!-- Json formatting -->
-<!-- <div>{{someUser}}</div> -->
-<!-- <div>{{someUser | json}}</div> -->
