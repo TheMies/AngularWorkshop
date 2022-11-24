@@ -1,21 +1,28 @@
-<!-- Define classes and styling -->
-<div class="card text-bg-success  mb-3" style="max-width: 30rem;">
-    <h5 class="card-title">
-        {{user?.showNameAgeAndHeight()}}
-    </h5>
+<!-- Text formatting -->
+<div>Text: {{someText}}</div>
+<!-- <div>Text: {{someText | uppercase}}</div> -->
+<!-- <div>Text: {{someText | lowercase}}</div> -->
 
-    <div class="card-body">
-        <label for="exampleInputEmail1" class="form-label">Username:</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{user?.name}}" />
-    </div>
 
-    <!-- Without Bootstrap -->
-    <button type="button" style="width: 200px;">Primary</button>
-    <button type="button" style="width: 200px;">Secondary</button>
+<!-- Date formats -->
+<!-- <div>Date: {{someDate}}</div> -->
+<!-- <div>Date: {{someDate | date }}</div> -->
+<!-- <div>Date: {{someDate | date : 'dd-MM-yyyy' }}</div> -->
 
-    <!-- With Bootstrap -->
-    <!-- <div class="container-fluid">
-        <button type="button" class="btn btn-primary" style="width: 200px;">Primary</button>
-        <button type="button" class="btn btn-secondary" style="width: 200px;">Secondary</button>
-    </div> -->
-</div>
+
+<!-- Integers formats -->
+<!-- <div>{{42}}</div> -->
+<!-- Integers formats (leading 0 and 2 decimals) -->
+<!-- <div>{{42 | number : '3.2-2'}}</div> -->
+
+
+<!-- Decimal formats -->
+<!-- <div>Number: {{3.14159265359}}</div> -->
+<!-- <div>Number: {{3.14159265359 | number : '1.0-3'}}</div> -->
+<!-- Note the error! import locale in TS -->
+<!-- <div>Number: {{3.14159265359 | number : '6.0-10':'nl-NL'}}</div> -->
+
+
+<!-- Json formatting -->
+<!-- <div>{{someUser}}</div> -->
+<!-- <div>{{someUser | json}}</div> -->
