@@ -1,1 +1,21 @@
-Hello Angular!
+<div class="container">
+    <h2>Title: {{title}}</h2>
+    <div>Multiplier: 
+    <input type="number" [(ngModel)]="multiplier" />
+    </div>
+    <button type="button" 
+            class="btn btn-success" 
+            style="width: 150px;"
+            (click)="onButtonClicked()">Press</button>
+    <button type="button" 
+            class="btn btn-danger" 
+            style="width: 150px;"
+            (click)="onResetButtonClicked()">Reset</button>
+    <div>Button pressed: {{buttonClickCounter}}</div>
+    <div>{{multiplier}} x {{buttonClickCounter}} = {{total}}</div>
+
+    <button type="button" 
+            class="btn btn-primary" 
+            style="width: 150px;"
+            (click)="onGetTotalClicked()">Get Total</button>
+</div>

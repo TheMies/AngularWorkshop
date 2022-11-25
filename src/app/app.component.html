@@ -1,4 +1,5 @@
-<!-- with initial data -->
-<div>
-  <app-test></app-test>
+<daqs-test [initalMultiplier]="15" (onGetTotal)="onGetTotal($event)"></daqs-test>
+<div class="container">
+    <hr/>
+  <div *ngIf="totalValue != ''">The answer: {{totalValue}}</div> 
 </div>
